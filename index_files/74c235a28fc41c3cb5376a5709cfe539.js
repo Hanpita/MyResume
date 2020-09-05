@@ -7120,101 +7120,6 @@ function qfyToscroll(thisobj){
 		}
 }
 
-//function checkAdvertising(){
-//	var uuid = dtGlobals.id;
-//	var href = 'http://www.qifeiye.com?tcode=freesite&uuid='+uuid;
-//	if(dtGlobals.qfymodel){ href="#";}
-//	var jAdObj = jQuery(".qfy_advertising");
-
-//	var style = 'display:block !important;opacity: 1 !important;position:fixed !important;bottom:40px !important;left:0 !important;width:116px !important;height:25px !important;line-height:24px !important;background:#23282D !important;z-index:2147483647 !important;text-align:center;color:#fff !important;font-size:12px;border-top-right-radius:3px;border-bottom-right-radius:3px;';
-//	if(!jAdObj.hasClass("band")){
-//		var content = 'BY 起飞页自助建站';
-//	}else{
-//		var content = '起飞页提供免费流量';
-//	}
-//	if(jAdObj.length==0){
-//		var tmphtml= '<a class="wf-mobile-hidden qfy_advertising" target=_blank style="'+style+'"  rel="external nofollow" href="'+href+'" >'+content+'</a>';
-//		jQuery("#page").append(tmphtml);
-//	}
-	
-//	var opacity = jAdObj.css("opacity");
-
-//	if(opacity!="1"){
-//		jAdObj.attr("style",style);
-//	}
-//	if(jAdObj.css("position")!="fixed"){
-//		jAdObj.attr("style",style);
-//	}
-//	if(jAdObj.css("bottom")!="40px"){
-//		jAdObj.attr("style",style);
-//	}
-//	if(jAdObj.css("left")!="0px"){
-//		jAdObj.attr("style",style);
-//	}
-//	var bgcolor = jAdObj.css("background-color");
-//	if(bgcolor!="#000000" && bgcolor!='rgb(0, 0, 0)'){
-//		jAdObj.attr("style",style);
-//	}
-//	var color = jAdObj.css("color");
-//	if(color!="#ffffff" &&  color!="rgb(255, 255, 255)"){
-//		jAdObj.attr("style",style);
-//	}
-//	var marginLeft = jAdObj.css("margin-left");
-//	if(marginLeft!="0px"){
-//		jAdObj.attr("style",style);
-//	}
-//	var marginTop = jAdObj.css("margin-top");
-//	if(marginTop!="0px"){
-//		jAdObj.attr("style",style);
-//	}
-//	var zindex = jAdObj.css("z-index");
-//	if(zindex!="2147483647"){
-//		jAdObj.attr("style",style);
-//	}
-//	var width = jAdObj.css("width");
-//	if(width!="116px"){
-//		jAdObj.attr("style",style);
-//	}
-//	var height = jAdObj.css("height");
-//	if(height!="20px"){
-//		jAdObj.attr("style",style);
-//	}
-//	var transform = jAdObj.css("transform");
-//	if(transform!="none"){
-//		jAdObj.attr("style",style);
-//	}
-//	var visible =  jAdObj.css("visibility");
-//	if(visible!="visible"){
-//		jAdObj.attr("style",style);
-//	}
-//	var display = jAdObj.css("display");
-//	if(display!="block"&& jQuery("body").width()>760){
-//		jAdObj.attr("style",style);
-//	}
-//	if(jAdObj.attr("href")!=href){
-//		jAdObj.attr("href",href);
-//	}
-//	if(jAdObj.html()!=content){
-//		jAdObj.html(content);
-//	}
-//	//检查预览下是否在iframe
-//	if(top!=self ){		
-//		try{
-//			//不同host
-//			if(top.window.location.host!=window.location.host){
-//				location.href = "http://www.qifeiye.com";
-//			}
-//		}catch(e){
-//			//跨域啦
-//			location.href = "http://www.qifeiye.com";
-//		}
-//	}
-	
-	
-	
-//	jQuery("#footer_band").hide();
-	
-//}
 function clickscode(obj){
 	jQuery(obj).attr('src','/api/scode.php'+'?'+Math.random());
 }
@@ -8060,15 +7965,6 @@ jQuery(document).ready(function($) {
 		
 	}
 	
-	//if(jQuery("body.free_public").length>0){
-	//	checkAdvertising();
-	//	setTimeout("checkAdvertising()",3000);
-	//	setTimeout("checkAdvertising()",6000);
-	//	setTimeout("checkAdvertising()",10000);
-	//	setTimeout("checkAdvertising()",20000);
-	//	setTimeout("checkAdvertising()",30000);
-	//	setTimeout("checkAdvertising()",100000);
-	//}
 	
 	jQuery(".qfytemplateslist .qfypreloadimg").each(function(){
 		var newurl = jQuery(this).attr("data-src");
